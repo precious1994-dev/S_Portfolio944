@@ -21,7 +21,13 @@
                             <a class="nav-link" href="{{ path("home") }}">Accueil</a>
                         </li>
                          <li class="nav-item">
-                            <a class="nav-link" href="" >Formations</a>
+                            <a class="nav-link" href="{{ path("formation") }}" >Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path("skill") }}" >Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path("reference") }}">Reference</a>
                         </li>
                         {% if is_granted("ROLE_USER") %}
                             <li class="nav-item dropdown">

@@ -29,7 +29,22 @@ if ($("#skills").length > 0) {
     $.getJSON("/api/skills", skills => {
         skills.forEach(skill => {
             $("#skills").append(`
-                <li class="list-group-item">${skill.name} - ${skill.level}/10</li>
+                <div class="card">
+                  <div class="card-text"></div>
+              </div>
+               
+                  <div class="col-12 col-md-6 col-lg-4 col-xl-3 my-1">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>${skill.name} - ${skill.level}/10</h4>
+                            <span class="text-muted">0</span>
+                        </div>
+                        <div class="card-body">
+                            <p></p>
+                           
+                        </div>
+                    </div>
+                </div>
             `);
         });
     })
