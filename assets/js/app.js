@@ -10,7 +10,7 @@ if ($("#formations").length > 0) {
     $.getJSON("/api/formations", formations => {
         formations.forEach(formation => {
             $("#formations").append(`
-                <div class="d-flex">
+                <div>
                     <div>
                         ${moment(formation.startedAt).format("YYYY")} - ${formation.endedAt === null ? "Aujourd'hui" : moment(formation.endedAt).format("YYYY")}
                     </div>
