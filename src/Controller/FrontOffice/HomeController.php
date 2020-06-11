@@ -20,4 +20,12 @@ class HomeController extends AbstractController
     {
         return $this->render("front_office/home.html.twig");
     }
+
+    /**
+     * List all formation
+     *  @Route("/list_formation")
+     */
+    public function listFormation(Request $request){
+
+    }
 }
